@@ -2,7 +2,7 @@ import typer
 
 from ssg.site import Site
 import ssg.parsers
-
+from ssg import extensions
 
 def main(source="content", dest="dist"):
     config = {
