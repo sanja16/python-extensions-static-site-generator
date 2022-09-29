@@ -5,7 +5,7 @@ def register(hook, order=0):
         _callbacks.setdefault(hook, {}).setdefault(order, []).append(func)
         return func
 
-    return register_callback()
+    return register_callback
 
 def event(hook, *args):
     for order in sorted(_callbacks.get(hook, {})):
